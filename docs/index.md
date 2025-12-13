@@ -5,7 +5,7 @@ hero:
   text: Pydantic-like validation for Zig
   tagline: Type-safe data validation with 40+ built-in types, human-readable errors, and zero runtime overhead. 102 tests passing.
   image:
-    src: /logo.svg
+    src: /logo.png
     alt: zigantic
   actions:
     - theme: brand
