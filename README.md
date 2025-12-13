@@ -111,6 +111,8 @@ pub fn main() !void {
 }
 ```
 
+> **Note:** zigantic automatically checks for updates when using JSON functions. To disable, call `z.disableUpdateCheck()` at the start of your program.
+
 ### JSON Parsing with Validation
 
 ```zig

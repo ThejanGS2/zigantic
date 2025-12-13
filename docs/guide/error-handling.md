@@ -115,3 +115,34 @@ var errors2 = z.errors.ErrorList.init(allocator);
 // ... add errors ...
 try errors1.merge(errors2);
 ```
+
+## Validation Errors vs Library Bugs
+
+::: tip Important Distinction
+**Validation errors** are expected behavior when users provide invalid data. Handle them normally.
+
+**Library bugs** are unexpected internal errors that might indicate a problem with zigantic itself.
+:::
+
+### Validation Errors (Expected)
+
+```zig
+// This is normal - user provided invalid data
+if (z.String(3, 50).init("Jo")) |name| {
+    std.debug.print("Valid: {s}\n", .{name.get()});
+} else |err| {
+    // Handle normally - this is NOT a library bug
+    std.debug.print("Error: {s}\n", .{z.errorMessage(err)});
+}
+```
+
+### Library Bugs (Unexpected)
+
+Only use `reportInternalError` for unexpected situations that might be library bugs:
+
+```zig
+// Only for unexpected internal errors
+z.reportInternalError("Unexpected null during parsing");
+```
+
+This will print a message with the GitHub issues URL for reporting.

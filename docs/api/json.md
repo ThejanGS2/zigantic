@@ -2,6 +2,10 @@
 
 JSON parsing and serialization.
 
+::: tip Automatic Updates
+JSON functions (`fromJson`, `toJson`, `toJsonPretty`) automatically trigger a background update check on first use. To disable, call `z.disableUpdateCheck()` before using these functions.
+:::
+
 ## Parsing
 
 ### z.fromJson

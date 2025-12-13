@@ -56,13 +56,17 @@ pub fn build(b: *std.Build) void {
 ### Step 3: Import and use
 
 ```zig
+const std = @import("std");
 const z = @import("zigantic");
 
 pub fn main() !void {
+    // Just use the library - no initialization needed!
     const name = try z.String(1, 50).init("Alice");
     std.debug.print("Hello, {s}!\n", .{name.get()});
 }
 ```
+
+> **Note:** zigantic automatically checks for updates when you use JSON functions. To disable this, call `z.disableUpdateCheck()` before using the library. See [Version & Updates](/guide/version-updates) for details.
 
 ## Your First Validation
 
@@ -185,4 +189,5 @@ zig build example    # Run basic example
 - **[Validation Types](/guide/validation-types)** - Complete type reference
 - **[JSON Parsing](/guide/json-parsing)** - Parse and serialize JSON
 - **[Error Handling](/guide/error-handling)** - Handle errors with codes
+- **[Version & Updates](/guide/version-updates)** - Automatic updates and error reporting
 - **[API Reference](/api/types)** - Full API documentation

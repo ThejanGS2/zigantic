@@ -33,9 +33,9 @@ features:
   - icon: 🔄
     title: JSON Parsing
     details: Parse and serialize JSON with automatic validation, nested struct support, and default values.
-  - icon: ✅
-    title: 102 Tests
-    details: Comprehensive test coverage ensuring reliability and correctness across all features.
+  - icon: 🔔
+    title: Automatic Updates
+    details: Checks for library updates automatically in the background. Easily disable with one function call.
 ---
 
 <style>

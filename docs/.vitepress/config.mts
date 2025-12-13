@@ -49,6 +49,7 @@ export default defineConfig({
             { text: 'Validation Types', link: '/guide/validation-types' },
             { text: 'JSON Parsing', link: '/guide/json-parsing' },
             { text: 'Error Handling', link: '/guide/error-handling' },
+            { text: 'Version & Updates', link: '/guide/version-updates' },
           ],
         },
       ],

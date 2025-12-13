@@ -119,3 +119,59 @@ if (!result.isValid()) {
     defer allocator.free(json_errors);
 }
 ```
+
+## Version Utilities
+
+```zig
+z.getVersion()       // "0.0.1"
+z.getVersionString() // "v0.0.1"
+z.ISSUES_URL         // GitHub issues URL
+```
+
+## Internal Error Reporting
+
+::: warning
+Use only for **library bugs**, NOT for validation errors!
+:::
+
+```zig
+// Report unexpected internal error
+z.reportInternalError("Unexpected null in parser");
+
+// Report with error code
+z.reportInternalErrorWithCode(error.OutOfMemory);
+```
+
+Output:
+
+```
+[ZIGANTIC ERROR] Unexpected null in parser
+
+If you believe this is a bug in zigantic, please report it at:
+  https://github.com/muhammad-fiaz/zigantic/issues
+```
+
+## Update Checking
+
+```zig
+// Disable automatic update checking (call before using library)
+z.disableUpdateCheck();
+
+// Or use custom config
+z.setConfig(.{
+    .auto_update_check = false,
+    .show_update_notifications = false,
+});
+
+// Manual update check (background)
+if (z.checkForUpdates(allocator)) |thread| {
+    defer thread.join();
+}
+
+// Manual update check (synchronous)
+var info = try z.checkForUpdatesSync(allocator);
+defer info.deinit();
+if (info.update_available) {
+    std.debug.print("Update: {s}\n", .{info.latest_version});
+}
+```
