@@ -1,0 +1,97 @@
+name: 📚 Documentation Issue
+description: Report an issue with documentation or suggest improvements
+title: "[DOCS]: "
+labels: ["documentation", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thank you for helping improve our documentation! 📚
+
+        Good documentation is crucial for a great developer experience.
+
+  - type: dropdown
+    id: doc-type
+    attributes:
+      label: Documentation Type
+      description: What type of documentation is this about?
+      options:
+        - README
+        - API Reference
+        - Getting Started Guide
+        - Quick Start
+        - Code Examples
+        - Error Messages
+        - Type Documentation
+        - Contributing Guide
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      description: What kind of documentation issue is this?
+      options:
+        - Missing documentation
+        - Incorrect information
+        - Unclear or confusing
+        - Outdated content
+        - Typo or grammar
+        - Broken link
+        - Missing code example
+        - Suggestion for improvement
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Documentation Location
+      description: Where is the documentation issue? (URL or file path)
+      placeholder: "e.g., https://muhammad-fiaz.github.io/zigantic/guide/getting-started or README.md"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Issue Description
+      description: Describe the documentation issue or improvement.
+      placeholder: "Clearly describe what's wrong or what could be improved..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-change
+    attributes:
+      label: Suggested Change
+      description: If you have a specific suggestion, please share it.
+      placeholder: "Describe your suggested change or provide the corrected text..."
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context or screenshots about the documentation issue.
+      placeholder: Any additional information...
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: I would be willing to submit a PR to fix this issue
+          required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/muhammad-fiaz/zigantic/blob/main/CODE_OF_CONDUCT.md).
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

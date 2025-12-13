@@ -1,0 +1,121 @@
+name: ✨ Feature Request
+description: Suggest a new feature or enhancement for zigantic
+title: "[FEATURE]: "
+labels: ["enhancement", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thank you for your feature suggestion! ✨
+
+        We appreciate you taking the time to help improve zigantic.
+
+        **Before submitting**, please:
+        - [ ] Search [existing issues](https://github.com/muhammad-fiaz/zigantic/issues) to check if this has been requested
+        - [ ] Consider if this fits zigantic's philosophy of compile-time validation
+
+  - type: dropdown
+    id: feature-type
+    attributes:
+      label: Feature Type
+      description: What type of feature are you requesting?
+      options:
+        - New validation type
+        - Enhancement to existing type
+        - JSON parsing/serialization
+        - Error handling improvement
+        - Documentation improvement
+        - Performance improvement
+        - Developer experience
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: Is your feature request related to a problem? Please describe.
+      placeholder: "A clear and concise description of what the problem is. Ex: I'm always frustrated when..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like to see.
+      placeholder: "A clear and concise description of what you want to happen..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: api-design
+    attributes:
+      label: API Design (if applicable)
+      description: If you have ideas for the API, please share them.
+      render: zig
+      placeholder: |
+        // Example of how the new feature might work
+        const MyType = z.NewType(params);
+        const value = try MyType.init(input);
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Describe any alternative solutions or features you've considered.
+      placeholder: "A clear and concise description of any alternative solutions..."
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use Cases
+      description: Describe specific use cases where this feature would be helpful.
+      placeholder: |
+        1. When validating API inputs...
+        2. When parsing configuration files...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: breaking-change
+    attributes:
+      label: Breaking Change
+      description: Would this feature require breaking changes to existing APIs?
+      options:
+        - "No"
+        - "Yes"
+        - "Not sure"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: contribution
+    attributes:
+      label: Willing to Contribute
+      description: Would you be willing to help implement this feature?
+      options:
+        - "Yes, I'd like to implement this"
+        - "Yes, I can help with testing/review"
+        - "No, but I can provide more details if needed"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context, mockups, or screenshots about the feature request.
+      placeholder: Any additional information...
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/muhammad-fiaz/zigantic/blob/main/CODE_OF_CONDUCT.md).
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
